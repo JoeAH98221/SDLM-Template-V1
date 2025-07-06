@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+    /* body{
+        font-family: "NotoSans-Black";
+    } */
+
+    table{
+        @apply
+        w-full
+        text-center
+        border-t-2
+        border-b-2
+        border-black
+        border-collapse
+        border-l-0
+        border-r-0;
+    }
+    th {
+        @apply 
+             border
+             border-black
+             bg-gray-200
+             px-2
+             py-1;
+    }
+    td {
+        @apply 
+            border
+            border-black
+            px-2
+            py-1;
+    }
+    
+    /* @font-face {
+        font-family: 'NotoSans-Black';
+        src: url('fonts/NotoSans-Black.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .notosans-black {
+        font-family: "NotoSans-Black";
+    } */
+}
+
+@layer components {
+    
+    .encabezado {
+        @apply
+        bg-personalizado
+        text-center 
+        text-white
+        px-4
+        border-b-3
+        border-black;
+    }
+    .linea {
+        @apply
+        block h-[2px] bg-black;
+    }
+    .formato-datos-1{
+        @apply
+            px-14
+            flex
+            items-center
+            mt-2;
+    }
+    .formato-datos-2 {
+        @apply
+            flex
+            flex-col
+            ml-4;
+    }
+}
+
+@theme {
+    --color-personalizado: #9b2247;
+    --my-border-width: 8px;
+}
