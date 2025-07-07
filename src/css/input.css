@@ -9,8 +9,8 @@
         @apply
         w-full
         text-center
-        border-t-2
-        border-b-2
+        border-t
+        border-b
         border-black
         border-collapse
         border-l-0
@@ -31,7 +31,14 @@
             px-2
             py-1;
     }
-    
+    .td-sin-bordes-lr {
+        @apply
+            border-t
+            border-l-0
+            border-r-0
+            border-b-0
+            border-black;
+}
     /* @font-face {
         font-family: 'NotoSans-Black';
         src: url('fonts/NotoSans-Black.ttf');
