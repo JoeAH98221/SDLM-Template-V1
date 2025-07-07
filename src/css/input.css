@@ -31,14 +31,13 @@
             px-2
             py-1;
     }
-    .td-sin-bordes-lr {
+
+    section {
         @apply
-            border-t
-            border-l-0
-            border-r-0
-            border-b-0
+            mt-2
+            border-3
             border-black;
-}
+    }
     /* @font-face {
         font-family: 'NotoSans-Black';
         src: url('fonts/NotoSans-Black.ttf');
@@ -79,6 +78,14 @@
             flex-col
             ml-4;
     }
+       .td-sin-bordes-lr {
+        @apply
+            border-t
+            border-l-0
+            border-r-0
+            border-b-0
+            border-black;
+}
 }
 
 @theme {
