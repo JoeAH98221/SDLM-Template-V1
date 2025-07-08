@@ -143,6 +143,15 @@
             items-center
             justify-center;
     }
+    .box-border-12 {
+        @apply
+            w-12
+            h-6
+            border
+            flex 
+            items-center
+            justify-center;
+    }
     .text-observaciones {
         @apply
             pt-9
