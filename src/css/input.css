@@ -161,7 +161,7 @@
     }
     .text-protesta {
         @apply
-            p-2
+            p-1
             text-center
             text-white
             bg-personalizado2
