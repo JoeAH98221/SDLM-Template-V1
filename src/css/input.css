@@ -17,9 +17,7 @@
         w-full
         text-center
         border-t
-        border-b
-        border-black
-        border-collapse
+        border-b-0
         border-l-0
         border-r-0;
     }
@@ -173,21 +171,15 @@
             text-center
             w-10;
     }
-    .formato-datos-2 {
-        @apply
-            flex
-            flex-col
-            ml-4;
-    }
-       .td-sin-bordes-lr {
+    .td-sin-bordes-lr {
         @apply
             border-t
             border-l-0
             border-r-0
             border-b-0
             border-black;
-}
-}
+        }
+    }
 
 @theme {
     --color-personalizado: #9b2247;
