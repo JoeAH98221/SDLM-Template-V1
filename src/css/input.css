@@ -41,7 +41,6 @@
         @apply
             mt-2
             border-3
-            border-black;
     }
     /* @font-face {
         font-family: 'NotoSans-Black';
@@ -193,6 +192,6 @@
 @theme {
     --color-personalizado: #9b2247;
     --color-personalizado2: #a57f2c;
-    --text-size-small: 8px;
-    --text-size-medium: 12px;
+    --text-size-small: 8.5px;
+    --text-size-medium: 10px;
 }
