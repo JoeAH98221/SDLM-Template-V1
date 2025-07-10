@@ -72,6 +72,7 @@
         bg-personalizado
         text-center 
         text-white
+        font-semibold
         text-size-medium
         py-0.5
         border-b-3
@@ -79,9 +80,7 @@
     }
     .espacio-contenedor {
         @apply
-            px-3 
-            py-2
-            ml-6
+            p-2
             space-y-3
             text-size-small;
     }
@@ -106,7 +105,7 @@
     .width-item-1 {
         @apply
             w-[150px]
-            font-semibold;
+            font-bold;
     }
     .width-item-2 {
         @apply
@@ -118,13 +117,13 @@
         @apply
             w-[60px]
             text-left
-            mx-16
-            font-semibold;
+            mx-20
+            font-bold;
     }
     .width-item-4 {
         @apply
             w-28
-            font-semibold;
+            font-bold;
     }
      .width-item-5 {
         @apply
@@ -164,6 +163,7 @@
             p-1
             text-center
             text-white
+            font-semibold
             bg-personalizado2
             text-size-small;
     }
