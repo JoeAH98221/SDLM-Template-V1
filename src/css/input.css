@@ -4,15 +4,20 @@
     /* body{
         font-family: "NotoSans-Black";
     } */
-
-    table{
+    
+    main {
+        @apply
+            w-[816px]
+            mx-auto
+            text-black
+            leading-tight;
+    }
+    table {
         @apply
         w-full
         text-center
-        border-t-2
-        border-b-2
-        border-black
-        border-collapse
+        border-t
+        border-b-0
         border-l-0
         border-r-0;
     }
@@ -31,7 +36,12 @@
             px-2
             py-1;
     }
-    
+
+    section {
+        @apply
+            mt-2
+            border-3
+    }
     /* @font-face {
         font-family: 'NotoSans-Black';
         src: url('fonts/NotoSans-Black.ttf');
@@ -46,35 +56,142 @@
 
 @layer components {
     
-    .encabezado {
+    .header-imagen {
+        @apply
+            py-2
+            flex
+            items-center
+            justify-between;
+    }
+    .header-titulo {
+        @apply
+            font-bold text-2xl text-center flex-1;
+    }
+    .encabezado-titulo {
         @apply
         bg-personalizado
         text-center 
         text-white
-        px-4
+        font-semibold
+        text-size-medium
+        py-0.5
         border-b-3
         border-black;
     }
-    .linea {
+    .espacio-contenedor {
         @apply
-        block h-[2px] bg-black;
+            p-2
+            space-y-3
+            text-size-small;
     }
-    .formato-datos-1{
+    .linea-w-5 {
         @apply
-            px-14
+            w-5
+            h-2
+            border-b;
+    }
+    .linea-flex-1 {
+        @apply
+            flex-1
+            h-2
+            border-b;
+    }
+    .linea-firma {
+        @apply
+            border-t
+            w-4/5
+            mx-auto
+    }
+    .width-item-1 {
+        @apply
+            w-[150px]
+            font-bold;
+    }
+    .width-item-2 {
+        @apply
+        w-[300px]
+        border-b
+        border-black;
+    }
+    .width-item-3 {
+        @apply
+            w-[60px]
+            text-left
+            mx-20
+            font-bold;
+    }
+    .width-item-4 {
+        @apply
+            w-28
+            font-bold;
+    }
+     .width-item-5 {
+        @apply
+            w-12
+            text-center
+            border-b;
+    }
+    .box-border-32 {
+        @apply
+            w-32
+            h-5
+            border
+            mx-4
             flex
             items-center
-            mt-2;
+            justify-center;
     }
-    .formato-datos-2 {
+    .box-border-12 {
         @apply
-            flex
-            flex-col
-            ml-4;
+            w-12
+            h-6
+            border
+            flex 
+            items-center
+            justify-center;
     }
-}
+    .text-observaciones {
+        @apply
+            pt-9
+            pl-2
+            pr-4
+            text-justify
+            text-size-small;
+    }
+    .text-protesta {
+        @apply
+            p-1
+            text-center
+            text-white
+            font-semibold
+            bg-personalizado2
+            text-size-small;
+    }
+    .text-border-w-32 {
+        @apply
+            border-b 
+            text-center
+            w-32;
+    }
+    .text-border-w-10 {
+        @apply
+            border-b 
+            text-center
+            w-10;
+    }
+    .td-sin-bordes-lr {
+        @apply
+            border-t
+            border-l-0
+            border-r-0
+            border-b-0
+            border-black;
+        }
+    }
 
 @theme {
     --color-personalizado: #9b2247;
-    --my-border-width: 8px;
+    --color-personalizado2: #a57f2c;
+    --text-size-small: 8.5px;
+    --text-size-medium: 10px;
 }
